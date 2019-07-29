@@ -6,7 +6,7 @@ import LabelInput from './LabelInput';
 
 const DemoForm = () => {
 
-  const [_, setLocation] = useLocation();
+  const [, setLocation] = useLocation();
 
   let inputRef = React.createRef()
 
