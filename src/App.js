@@ -1,25 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Switch } from "wouter";
+
+import Wrapper from './components/Wrapper';
+import FrameWrapper from './components/FrameWrapper';
+import Header from './components/Header';
+import SdsHtml from './components/SdsHtml';
+import ComplianceHtml from './components/ComplianceHtml';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper>
+      <Header/>
+
+      <Switch>
+        <Route path="/sds/:cas/:edition">
+          {params => (
+            <FrameWrapper>
+              <SdsHtml cas={params.cas} edition={params.edition}/>
+            </FrameWrapper>
+          )}
+        </Route>
+        <Route path="/compliance/:cas">
+          {params => (
+            <FrameWrapper>
+              <ComplianceHtml cas={params.cas}/>
+            </FrameWrapper>
+          )}
+        </Route>
+      </Switch>
+
+    </Wrapper>
   );
 }
 
