@@ -22,7 +22,7 @@ const Input = styled.input`
 const LabelInput = ({ label, inputRef, value }) => (
   <Div>
     <Label>{label}</Label>
-    <Input ref={inputRef} defaultValue={value}/>
+    <Input ref={inputRef} defaultValue={value} placeholder='请输入 CAS 号' autoFocus/>
   </Div>
 )
 
