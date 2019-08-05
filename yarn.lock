@@ -9979,9 +9979,9 @@ ws@^6.1.2:
     async-limiter "~1.0.0"
 
 xixisys-js-sdk@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.npm.taobao.org/xixisys-js-sdk/download/xixisys-js-sdk-1.1.1.tgz#565a890620f40bbb9029740220c82ba8e8f55866"
-  integrity sha1-VlqJBiD0C7uQKXQCIMgrqOj1WGY=
+  version "1.1.2"
+  resolved "https://registry.npm.taobao.org/xixisys-js-sdk/download/xixisys-js-sdk-1.1.2.tgz#05bdc344600a30fca4fe0a990b6fe3e6402a7ad9"
+  integrity sha1-Bb3DRGAKMPyk/gqZC2/j5kAqetk=
   dependencies:
     ky "^0.11.0"
     whatwg-fetch "^3.0.0"
